@@ -42,3 +42,41 @@ function task3()
     else
         alert("Некорректный ввод");
 }
+
+function task4()
+{
+    function isStr(str)
+    {
+    let pass = /^[a-zA-Zа-яА-Я]{10,}$/;
+    let password=pass.test(str);
+    return password;
+    }
+    let str=prompt("Введите строку, которая  не содержит спецсимволов и цифр, и ее длина не менее 10 символов");
+    if (isStr(str))
+        alert("Все правильно");
+    else
+        alert("Некорректный ввод");
+}
+
+function task5()
+{
+    let str=prompt("Введите строку");
+    function getDigits()
+    {
+        let digits = str.match(/\d/g).length
+        return (digits);
+    }
+    function getNameLat()
+    {
+        let nameLat = str.match(/[a-z]/gi).length
+        return(nameLat);
+    }
+    function getNameKir()
+    {
+        let namekir = str.match(/[а-я]/gi).length
+        return(nameKir);
+    }
+    alert (`Количество цифр ${getDigits()}`);
+    alert (`Количество латинских букв ${getNameLat()}`);
+    alert (`Количество кириллических букв ${getNameKir()}`);
+}
