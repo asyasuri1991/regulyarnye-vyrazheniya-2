@@ -12,6 +12,7 @@ function task1()
     else
         alert("Некорректный ввод");
 }
+
 function task2()
 {
     function isName(str)
