@@ -27,3 +27,18 @@ function task2()
     else
         alert("Имя переменной введено неправильно");
 }
+
+function task3()
+{
+    function isStr(str)
+    {
+    let log= /^[a-zA-Z0-9]+$/;
+    let login=log.test(str);
+    return login;
+    }
+    let str=prompt("Введите строку, состоящую только из букв и цифр");
+    if (isStr(str))
+        alert("Корректно");
+    else
+        alert("Некорректный ввод");
+}
