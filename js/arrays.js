@@ -6,13 +6,12 @@ function task1()
     let adress=url.test(str);
     return adress;
     }
-    let str=prompt("Введите URL адрес");
+    let str=prompt("Введите URL");
     if (isURL(str))
         alert("Правильно");
     else
         alert("Некорректный ввод");
 }
-
 
 function task2()
 {
